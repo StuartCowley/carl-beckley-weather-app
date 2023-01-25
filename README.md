@@ -2,7 +2,7 @@
 
 This is a project to create a weather app using React.
 
-The app will use [this](https://platform.manchestercodes.com/module/frontend/react-basics/?pageId=Zf0eZODKIJJK2eo5d3Ls) JSON data for now, though will be using live data going forward.
+The app will use [this](https://s3.eu-west-2.amazonaws.com/mcrcodes/weather/forecast.json) JSON data for now, though will be using live data going forward.
 
 ## Available Scripts
 
