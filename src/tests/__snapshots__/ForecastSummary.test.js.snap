@@ -22,6 +22,7 @@ exports[`ForecastSummary renders 1`] = `
     </div>
     <div
       class="forecast-summary_icon"
+      data-testid="forecast-icon"
     >
       Stub icon
     </div>
