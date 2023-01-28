@@ -22,7 +22,7 @@ function ForecastDetails({ forecast }) {
 
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({
-    date: PropTypes.string.isRequired,
+    date: PropTypes.number.isRequired,
     humidity: PropTypes.number.isRequired,
     wind: PropTypes.shape({
       speed: PropTypes.number.isRequired,
