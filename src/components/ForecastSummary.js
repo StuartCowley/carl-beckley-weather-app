@@ -6,7 +6,7 @@ function ForecastSummary(props) {
   const { date, temperature, description, icon } = props;
   const formattedDate = new Date(date).toDateString();
   return (
-    <div className="forecast-summary">
+    <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary_date">{formattedDate}</div>
 
       <div className="forecast-summary_temperature">
