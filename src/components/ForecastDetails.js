@@ -8,14 +8,18 @@ function ForecastDetails({ forecast }) {
     <div className="forecast-details">
       <div className="forecast-details_date">Date: {formattedDate}</div>
       <div className="forecast-details_temperature-max">
-        {temperature.max}&deg;C
+        Max Temp: {temperature.max}&deg;C
       </div>
       <div className="forecast-details_temperature-min">
-        {temperature.min}&deg;C
+        Min Temp: {temperature.min}&deg;C
       </div>
-      <div className="forecast-details_humidity">{humidity}</div>
-      <div className="forecast-details_wind-speed">{wind.speed}</div>
-      <div className="forecast-details_wind-direction">{wind.direction}</div>
+      <div className="forecast-details_humidity">Humidity: {humidity}</div>
+      <div className="forecast-details_wind-speed">
+        Wind Speed: {wind.speed}
+      </div>
+      <div className="forecast-details_wind-direction">
+        Wind Direction: {wind.direction}
+      </div>
     </div>
   );
 }
