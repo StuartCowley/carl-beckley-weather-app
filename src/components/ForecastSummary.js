@@ -18,6 +18,7 @@ function ForecastSummary(props) {
       </div>
 
       <div className="forecast-summary_description">{description}</div>
+      <button type="button">More Details</button>
     </div>
   );
 }
