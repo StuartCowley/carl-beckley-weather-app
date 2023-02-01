@@ -12,11 +12,14 @@ exports[`App renders App component correctly 1`] = `
       class="search-form"
     >
       <input
+        class="search-form_text-box"
         placeholder="Enter city..."
         type="text"
         value=""
       />
       <button
+        class="search-form_button"
+        data-testid="button"
         type="submit"
       >
         Search

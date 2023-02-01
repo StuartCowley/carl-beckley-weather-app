@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import SearchForm from "../../components/SearchForm";
 
 describe("Search Form", () => {
@@ -18,5 +18,18 @@ describe("Search Form", () => {
       />
     );
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("fires the correct event", () => {
+    const { getByTestId } = render(
+      <SearchForm
+        searchText={validProps.searchText}
+        setSearchText={validProps.setSearchText}
+        onSubmit={validProps.onSubmit}
+      />
+    );
+    const button = getByTestId("button");
+    fireEvent.click(button);
+    expect(validProps.onSubmit).toHaveBeenCalled();
   });
 });
