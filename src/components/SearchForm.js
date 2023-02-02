@@ -3,6 +3,11 @@ import PropTypes from "prop-types";
 
 function SearchForm({ searchText, setSearchText, onSubmit }) {
   const handleInputChange = (event) => setSearchText(event.target.value);
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      onSubmit();
+    }
+  };
 
   return (
     <div className="search-form">
@@ -10,6 +15,7 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
         className="search-form_text-box"
         type="text"
         onChange={handleInputChange}
+        onKeyDown={handleKeyPress}
         value={searchText}
         placeholder="Enter city..."
       />
