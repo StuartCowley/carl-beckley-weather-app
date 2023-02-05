@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Forecast Details should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-details"
+  >
+    <div
+      class="forecast-details_date"
+    >
+      Date: Thu Jan 01 1970
+    </div>
+    <div
+      class="forecast-details_temperature-max"
+    >
+      Max Temp: 30°C
+    </div>
+    <div
+      class="forecast-details_temperature-min"
+    >
+      Min Temp: 10°C
+    </div>
+    <div
+      class="forecast-details_humidity"
+    >
+      Humidity: 30
+    </div>
+    <div
+      class="forecast-details_wind-speed"
+    >
+      Wind Speed: 20
+    </div>
+    <div
+      class="forecast-details_wind-direction"
+    >
+      Wind Direction: s
+    </div>
+  </div>
+</DocumentFragment>
+`;
